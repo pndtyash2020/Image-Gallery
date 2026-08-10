@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Image Gallery</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--HEADER-->
+
+    <header class="header">
+
+        <div class="logo">
+            <span class="logo-icon">✦</span>
+            <span>Image Gallery</span>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO-->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="hero-label">✦ CURATED VISUALS</span>
+
+                <h1>
+                    Image
+                    <span>Gallery</span>
+                </h1>
+
+                <p>
+                    Explore beautiful moments, places, ideas and stories
+                    captured through the lens.
+                </p>
+
+                <a href="#gallery" class="hero-button">
+                    Explore Gallery
+                    <span>↓</span>
+                </a>
+
+            </div>
+
+            <div class="hero-decoration">
+
+    <div class="circle circle-one"></div>
+    <div class="circle circle-two"></div>
+
+    <div class="featured-image">
+
+        <img
+            src="images/nature(2).jpg"
+            alt="Featured mountain landscape"
+        >
+
+        <div class="featured-info">
+            <span>FEATURED</span>
+            <strong>01 / 08</strong>
+        </div>
+
+    </div>
+
+</div>
+
+        </section>
+
+
+        <!-- GALLERY -->
+
+        <section class="gallery-section" id="gallery">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">OUR COLLECTION</span>
+
+                    <h2>Discover <span>Moments</span></h2>
+                </div>
+
+                <p>
+                    A collection of carefully selected visuals
+                    from different worlds.
+                </p>
+
+            </div>
+
+
+            <!-- FILTER BUTTONS -->
+
+            <div class="filters">
+
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="nature">
+                    Nature
+                </button>
+
+                <button class="filter-btn" data-filter="travel">
+                    Travel
+                </button>
+
+                <button class="filter-btn" data-filter="architecture">
+                    Architecture
+                </button>
+
+                <button class="filter-btn" data-filter="technology">
+                    Technology
+                </button>
+
+                <button class="filter-btn" data-filter="culture">
+                    Culture
+                </button>
+
+            </div>
+
+
+            <!-- GALLERY GRID -->
+
+            <div class="gallery-grid">
+
+                <!-- IMAGE 1 -->
+
+                <article class="gallery-item large" data-category="nature">
+
+                    <img
+                        src="images/nature.jpg"
+                        alt="Mountain landscape"
+                    >
+
+                    <div class="image-overlay">
+
+                        <div>
+                            <span>Nature</span>
+                            <h3>Mountain Silence</h3>
+                        </div>
+
+                        <button class="view-btn" aria-label="View image">
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 2 -->
+
+                <article class="gallery-item" data-category="travel">
+
+                    <img
+                        src="images/travel.jpg"
+                        alt="Travel destination"
+                    >
+
+                    <div class="image-overlay">
+
+                        <div>
+                            <span>Travel</span>
+                            <h3>Wander Beyond</h3>
+                        </div>
+
+                        <button class="view-btn" aria-label="View image">
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 3 -->
+
+                <article class="gallery-item" data-category="architecture">
+
+                    <img
+                        src="images/architecture.jpg"
+                        alt="Modern architecture"
+                    >
+
+                    <div class="image-overlay">
+
+                        <div>
+                            <span>Architecture</span>
+                            <h3>Lines & Forms</h3>
+                        </div>
+
+                        <button class="view-btn" aria-label="View image">
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 4 -->
+
+                <article class="gallery-item" data-category="technology">
+
+                    <img
+                        src="images/technology.jpg"
+                        alt="Modern technology"
+                    >
+
+                    <div class="image-overlay">
+
+                        <div>
+                            <span>Technology</span>
+                            <h3>Future in Focus</h3>
+                        </div>
+
+                        <button class="view-btn" aria-label="View image">
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 5 -->
+
+                <article class="gallery-item large" data-category="nature">
+
+                    <img
+                        src="images/nature(2).jpg"
+                        alt="Forest landscape"
+                    >
+
+                    <div class="image-overlay">
+
+                        <div>
+                            <span>Nature</span>
+                            <h3>Into the Wild</h3>
+                        </div>
+
+                        <button class="view-btn" aria-label="View image">
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 6 -->
+
+                <article class="gallery-item" data-category="culture">
+
+                    <img
+                        src="images/culture.jpg"
+                        alt="Cultural scene"
+                    >
+
+                    <div class="image-overlay">
+
+                        <div>
+                            <span>Culture</span>
+                            <h3>Stories of Heritage</h3>
+                        </div>
+
+                        <button class="view-btn" aria-label="View image">
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 7 -->
+
+                <article class="gallery-item" data-category="travel">
+
+                    <img
+                        src="images/travel-2.jpg"
+                        alt="Beautiful travel destination"
+                    >
+
+                    <div class="image-overlay">
+
+                        <div>
+                            <span>Travel</span>
+                            <h3>Chasing Horizons</h3>
+                        </div>
+
+                        <button class="view-btn" aria-label="View image">
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- IMAGE 8 -->
+
+                <article class="gallery-item" data-category="architecture">
+
+                    <img
+                        src="images/architecture-2.jpg"
+                        alt="City architecture"
+                    >
+
+                    <div class="image-overlay">
+
+                        <div>
+                            <span>Architecture</span>
+                            <h3>Urban Geometry</h3>
+                        </div>
+
+                        <button class="view-btn" aria-label="View image">
+                            ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section class="about-section" id="about">
+
+            <span class="section-label">ABOUT THE GALLERY</span>
+
+            <h2>Every image tells a <span>story.</span></h2>
+
+            <p>
+                Image Gallery is a curated visual experience designed to
+                showcase the beauty of nature, travel, architecture,
+                technology and culture.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- LIGHTBOX -->
+
+    <div class="lightbox" id="lightbox">
+
+        <button class="lightbox-close" id="lightboxClose">
+            ✕
+        </button>
+
+        <button class="lightbox-prev" id="lightboxPrev">
+            ←
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightboxImage" src="" alt="">
+
+            <div class="lightbox-info">
+
+                <div>
+                    <span id="lightboxCategory"></span>
+                    <h3 id="lightboxTitle"></h3>
+                </div>
+
+                <span id="imageCounter">01 / 08</span>
+
+            </div>
+
+        </div>
+
+        <button class="lightbox-next" id="lightboxNext">
+            →
+        </button>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Image Gallery. Crafted with HTML, CSS & JavaScript.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
